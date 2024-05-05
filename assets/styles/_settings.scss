@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+$color1: #fd3a7f;
+$color2: #0b0b04;
+$color3: #0b0b04d1;
+$color4: #b4b4b2;
+$color5: #b4b4b238;
+
+@font-face {
+  font-family: "roboto-light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+$font1: "roboto-light";
+
 body {
   background: darkgreen;
 }

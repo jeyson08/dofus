@@ -1,3 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "roboto-light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
 body {
   background: darkgreen;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+}
+header .header-bg {
+  height: 100vh;
+}
+header .header-bg video {
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+header .link a {
+  color: #fd3a7f;
+  font-family: "roboto-light";
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+header nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(11, 11, 4, 0.8196078431);
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav ul li {
+  font-family: "roboto-light";
+  color: #b4b4b2;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-right: 1px solid rgba(180, 180, 178, 0.2196078431);
+  margin-right: 10px;
+  padding: 20px 20px;
+}
+header nav .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav .nav-left .logo {
+  height: 60px;
+  width: 100px;
+  background: url(../../assets/images/logo.png) center/cover;
+  border-right: 1px solid rgba(180, 180, 178, 0.2196078431);
+}
+header nav .nav-middle {
+  height: 100px;
+  position: relative;
+  bottom: 10px;
+  width: 20%;
+}
+header nav .nav-middle button {
+  margin: 0 auto;
+  border: none;
+  height: 90px;
+  width: 300px;
+  background: url(../../assets/images/btn-play1.png) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: "roboto-light";
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+}
+header nav .nav-middle button span {
+  font-size: 1rem;
+}
+header nav .nav-right ul li:first-of-type {
+  border-left: 1px solid rgba(180, 180, 178, 0.2196078431);
 }/*# sourceMappingURL=index.css.map */
