@@ -171,7 +171,7 @@ section.legende div {
 section.legende div div.text {
   margin: 0 auto;
   height: 605px;
-  width: 815px;
+  width: 750px;
   background: url(../images/bg-text-1.png) center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,7 +186,7 @@ section.legende div div.text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 13% 0 13%;
+  padding: 0 8% 0 8%;
 }
 section.legende div div.text h2 {
   font-family: "roboto-light";
@@ -194,6 +194,7 @@ section.legende div div.text h2 {
   text-transform: uppercase;
   font-size: 2rem;
   margin: 80px 0 50px 0;
+  text-align: center;
 }
 section.legende div div.text p {
   text-align: center;
