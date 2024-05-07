@@ -71,6 +71,7 @@ header nav ul li {
   border-right: 1px solid rgba(180, 180, 178, 0.2196078431);
   margin-right: 10px;
   padding: 20px 20px;
+  cursor: pointer;
 }
 header nav .nav-left {
   display: -webkit-box;
@@ -117,4 +118,139 @@ header nav .nav-middle button span {
 }
 header nav .nav-right ul li:first-of-type {
   border-left: 1px solid rgba(180, 180, 178, 0.2196078431);
+}
+
+section.legende {
+  background: url(../images/bg-block2-1.jpg) center/cover;
+  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.legende button.prev,
+section.legende button.suiv {
+  height: 211px;
+  width: 78px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+section.legende button.prev {
+  background: url(../images/carousel-prev_02.png);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+section.legende button.prev:hover {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+section.legende div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.legende div div.text {
+  margin: 0 auto;
+  height: 605px;
+  width: 815px;
+  background: url(../images/bg-text-1.png) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 13% 0 13%;
+}
+section.legende div div.text h2 {
+  font-family: "roboto-light";
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 80px 0 50px 0;
+}
+section.legende div div.text p {
+  text-align: center;
+  font-family: "roboto-light";
+  color: #b4b4b2;
+  font-size: 1rem;
+}
+section.legende div div.text p:first-of-type {
+  margin-bottom: 10px;
+}
+section.legende div ul {
+  background: url(../images/bg-slick-dot.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 64px;
+  height: 39px;
+  position: relative;
+}
+section.legende div ul::before {
+  position: absolute;
+  left: -18px;
+  content: "";
+  height: 39px;
+  width: 18px;
+  background: url(../images/bg-slick-left.png);
+}
+section.legende div ul::after {
+  position: absolute;
+  right: -18px;
+  content: "";
+  height: 39px;
+  width: 18px;
+  background: url(../images/bg-slick-right.png);
+}
+section.legende div ul li button {
+  border: none;
+  background: url(../images/slick-dot.png) right/cover;
+  width: 22.5px;
+  height: 27px;
+  cursor: pointer;
+}
+section.legende div ul li:first-of-type button {
+  background: url(../images/slick-dot.png) left/cover;
+}
+section.legende button.suiv {
+  background: url(../images/carousel-next_02.png);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+section.legende button.suiv:hover {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }/*# sourceMappingURL=index.css.map */
