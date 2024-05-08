@@ -318,6 +318,9 @@ section.video > div:nth-of-type(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.video > div:nth-of-type(2) .video-container {
   width: 100%;
@@ -340,9 +343,46 @@ section.video > div:nth-of-type(2) .video-container iframe {
   height: 100%;
 }
 section.video > div:nth-of-type(2) ul {
+  background: url(../images/bg-slick-dot.png);
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 39px;
+  position: relative;
+}
+section.video > div:nth-of-type(2) ul::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 39px;
+  background: url(../images/bg-slick-left.png);
+  left: -18px;
+}
+section.video > div:nth-of-type(2) ul::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 39px;
+  background: url(../images/bg-slick-right.png);
+  right: -18px;
+}
+section.video > div:nth-of-type(2) ul li button {
+  border: none;
+  width: 22.5px;
+  height: 27px;
+  cursor: pointer;
+  background: url(../images/slick-dot.png) right/cover;
+}
+section.video > div:nth-of-type(2) ul li:first-of-type button {
+  background: url(../images/slick-dot.png) left/cover;
 }
 section.video > div:nth-of-type(3) {
   height: 100%;
