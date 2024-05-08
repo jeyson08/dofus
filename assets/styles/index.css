@@ -15,6 +15,7 @@ li {
 }
 body {
   background: darkgreen;
+  overflow-x: hidden;
 }
 
 header {
