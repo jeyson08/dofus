@@ -282,6 +282,28 @@ section.video > div:first-of-type .button-container-left {
   width: 100%;
   height: 450px;
   background: url(../images/bg-screens.png) right/cover;
+  padding: 11% 3% 3% 0;
+}
+section.video > div:first-of-type .button-container-left .left-img {
+  width: 100%;
+  height: 100%;
+  background: url(../images/Screens_dofus_7.jpg) right/cover;
+}
+section.video > div:first-of-type .button-container-left button {
+  position: absolute;
+  height: 211px;
+  width: 78px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: url(../images/carousel-prev_02.png);
+  left: -10px;
+  -webkit-transform: translateY(-145%);
+          transform: translateY(-145%);
+}
+section.video > div:first-of-type .button-container-left button:hover {
+  left: 0;
 }
 section.video > div:nth-of-type(2) {
   height: 100%;
@@ -332,14 +354,31 @@ section.video > div:nth-of-type(3) {
       -ms-flex-align: center;
           align-items: center;
 }
-section.video > div:nth-of-type(3) div.button-container-right {
+section.video > div:nth-of-type(3) .button-container-right {
+  position: relative;
   width: 100%;
   height: 450px;
   background: url(../images/bg-screens.png) left/cover;
-  padding: 5% 1% 1% 1%;
+  padding: 11% 0 3% 3%;
 }
-section.video > div:nth-of-type(3) div.button-container-right .right-img {
+section.video > div:nth-of-type(3) .button-container-right .right-img {
   width: 100%;
   height: 100%;
   background: url(../images/Screens_dofus_1.jpg) left/cover;
+}
+section.video > div:nth-of-type(3) .button-container-right button {
+  position: absolute;
+  height: 211px;
+  width: 78px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: url(../images/carousel-next_02.png);
+  right: -10px;
+  -webkit-transform: translateY(-145%);
+          transform: translateY(-145%);
+}
+section.video > div:nth-of-type(3) .button-container-right button:hover {
+  right: 0;
 }/*# sourceMappingURL=index.css.map */
